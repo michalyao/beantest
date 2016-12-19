@@ -1,0 +1,10 @@
+jdk:
+  - oraclejdk8
+
+cache:
+  directories:
+  - $HOME/.m2
+  - $HOME/.gradle
+
+script:
+ -  mvn clean test jacoco:report coveralls:report
